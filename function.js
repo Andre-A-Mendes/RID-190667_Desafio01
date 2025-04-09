@@ -11,16 +11,7 @@ const handleSubmit = (event) => {
       'Content-Type': 'application/json'
     },
     body: JSON.stringify({ Name: name, Email: email })
-  })
-  .then(response => response.json())
-  .then(data => {
-    console.log('Success:', data);
-    alert("Formulário enviado com sucesso!");
-  })
-  .catch(error => {
-    console.error('Error:', error);
-    alert("Formulario enviado com Sucesso.");
-  });
+
 };
 
 
